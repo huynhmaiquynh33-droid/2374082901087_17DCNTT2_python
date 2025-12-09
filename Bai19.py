@@ -1,5 +1,7 @@
-n = int(input("Nhập số nguyên dương n: "))
-print(f"Bảng cửu chương của {n}:")
+# Nhập list từ bàn phím
+L = list(map(int, input("Nhập list số nguyên, cách nhau bởi dấu cách: ").split()))
 
-for i in range(1, 11):
-    print(f"{n} x {i} = {n * i}")
+# Sắp xếp tăng dần
+L.sort()
+
+print("List sau khi sắp xếp:", L)
